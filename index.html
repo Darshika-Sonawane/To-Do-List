@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="input-group">
+                <h3>Task List 2023</h3>
+                <input type="text" class="form-control" placeholder="What do you have planned?">
+                <button type="button" id="add-task">Add Task</button>
+            </div>
+            <div class="tasks">
+            <h5>Task of the Day!!!</h5>
+            <ul type="none"  id="parentList" class="list-group">
+                <li class="list-group-item" >
+                    <span>Task 1</span> 
+                    <button onclick="editTask(this)">Edit</button>
+                    <button onclick="removeTask(this)">Delete</button>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

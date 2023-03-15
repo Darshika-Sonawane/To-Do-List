@@ -1,0 +1,72 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #5626ce;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background: var(--dark); */
+    background: url(todo4.jpg);
+    background-size: cover;
+    color: var(--darkest);
+}
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--pink);
+    font-size: 1.28rem;
+    font-weight: 800;
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .input-group h3{
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+.container .input-group{
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+.container  h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2.8rem;
+}
+.container input{
+    /* flex: 1 1 0rem; */
+    background-color: var(--darker);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    color: var(--light);
+    font-size: 1.28rem;
+}
+.container .list-group .list-group-item button{
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+    justify-content: space-between;
+}
+.container .list-group .list-group-item span{
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+.container .tasks{
+    margin-left: 60rem;
+    margin-top: -9rem;
+}
